@@ -3,6 +3,7 @@
     --header-bgcolor:rgba(0, 0, 0, 0.756);
     --font-color:white;
     --logo-fontsize:3rem;
+    --menu-button-fontsize:2rem;
     
 }
 *{
@@ -23,14 +24,28 @@ header{
     height: 8vh;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-left: 10%;
     padding-right: 10%;
+    
 }
 .logo{
     display: flex;
     font-size: var(--logo-fontsize);
+    text-wrap: nowrap;
 }
 .right-header{
     display: flex;
+    gap: 8vw;
+}
+.right-header button{
+    height: clamp(5vh,6vh,8vh);
+    color: var(--font-color);
+    border: none;
+    background-color: inherit;
+    font-family:"Amatic SC", sans-serif;
+    font-size: var(--menu-button-fontsize);
+    cursor:pointer;
+    font-weight: 900;
 
 }
