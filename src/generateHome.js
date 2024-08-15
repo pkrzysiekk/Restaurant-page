@@ -1,27 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
+import { clearScreen } from "./clearScreen";
+export function generateHomePage(){
+    const contentDiv=document.querySelector("#content");
+    const contentParagraph=document.createElement("p");
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant</title>
-
-</head>
-
-<body>
-    <header>
-        <div class="logo">
-            <p>Moon Restaurant</p>
-        </div>
-        <div class="right-header">
-            <button id="home">Home</button>
-            <button>Menu</button>
-            <button>About</button>
-        </div>
-    </header>
-    <main>
-        <div id="content">
-            <p>Welcome to Moon Restaurant, your celestial destination for an extraordinary dining experience! Located in
+    const textContent=`Welcome to Moon Restaurant, your celestial destination for an extraordinary dining experience! Located in
                 the heart of the city, our inviting atmosphere and enchanting decor are designed to transport you to a
                 world of culinary delight. At Moon Restaurant, we believe in celebrating the art of food by bringing you
                 dishes crafted from the freshest local ingredients, each one thoughtfully prepared to honor both
@@ -31,12 +13,11 @@
                 family gatherings, or special celebrations, we strive to create memorable moments that linger long after
                 the last bite. Join us as we take your taste buds on a journey through flavors that are as captivating
                 as the night sky. Discover the magic of Moon Restaurant, where every meal is a celebration of life's
-                most delicious moments!</p>
-        </div>
-    </main>
-    <footer>
-        <p>Author:@pkrzysiekk</p>
-    </footer>
-</body>
+                most delicious moments!`;
+    clearScreen();
+    contentParagraph.textContent=textContent;
+    contentDiv.appendChild(contentParagraph);
 
-</html>
+    
+
+}

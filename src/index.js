@@ -1,4 +1,5 @@
 import "./styles.css";
-import { greetings } from "./module";
+import { generateHomePage } from "./generateHome";
 console.log("Hello!");
-console.log(greetings);
+const homeButton=document.querySelector("#home");
+homeButton.addEventListener("click",generateHomePage);
