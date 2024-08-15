@@ -23,6 +23,9 @@ body{
     background-image: url(img/background.jpg);
     background-size: cover;
     padding: var(--page-side-padding);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+
 }
 header{
     background-color: var(--header-bgcolor);
@@ -59,12 +62,23 @@ header{
     border: 1px solid white;
 }
 .main{
-   
+
 }
 #content{
     margin-top: 5%;
     background-color: var(--content-bgcolor);
     font-size: 1.5rem;
+    padding: var(--text-padding);
+
+
+}
+footer{
+    background-color: var(--content-bgcolor);
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--menu-button-fontsize);
     padding: var(--text-padding);
 
 }
