@@ -1,4 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+:root{
+
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+
 body{
     height: 100vh;
     background-color:blueviolet;
+    background-image: url(img/background.jpg);
+    background-size: cover;
 }
