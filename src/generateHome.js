@@ -2,7 +2,6 @@ import { clearScreen } from "./clearScreen";
 export function generateHomePage(){
     const contentDiv=document.querySelector("#content");
     const contentParagraph=document.createElement("p");
-
     const textContent=`Welcome to Moon Restaurant, your celestial destination for an extraordinary dining experience! Located in
                 the heart of the city, our inviting atmosphere and enchanting decor are designed to transport you to a
                 world of culinary delight. At Moon Restaurant, we believe in celebrating the art of food by bringing you
